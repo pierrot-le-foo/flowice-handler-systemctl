@@ -35,7 +35,7 @@ function logs(service, options) {
                 : options.until);
         }
         const { stdout } = yield (0, util_1.promisify)(child_process_1.exec)(command.join(" "));
-        return stdout;
+        return stdout.split('\n');
     });
 }
 exports.logs = logs;
