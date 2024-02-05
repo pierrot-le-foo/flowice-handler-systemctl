@@ -31,5 +31,5 @@ export async function logs(service: Service, options: LogsOptions) {
 
   const { stdout } = await promisify(exec)(command.join(" "));
 
-  return [];
+  return stdout.split('\n');
 }
