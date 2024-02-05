@@ -1,6 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.stop = exports.status = exports.start = exports.restart = exports.pause = void 0;
+exports.stop = exports.status = exports.start = exports.restart = exports.pause = exports.logs = void 0;
+var logs_1 = require("./logs");
+Object.defineProperty(exports, "logs", { enumerable: true, get: function () { return logs_1.logs; } });
 var pause_1 = require("./pause");
 Object.defineProperty(exports, "pause", { enumerable: true, get: function () { return pause_1.pause; } });
 var restart_1 = require("./restart");
